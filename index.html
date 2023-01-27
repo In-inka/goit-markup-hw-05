@@ -32,7 +32,7 @@
             >Web<span class="nav-studio">Studio</span></a
           >
           <ul class="header-list list text">
-            <li><a href="./index.html" class="link">Studio</a></li>
+            <li><a href="./index.html" class="link current">Studio</a></li>
             <li><a href="./portfolio.html" class="link">Portfolio</a></li>
             <li><a href="" class="link">Contacts</a></li>
           </ul>
@@ -53,7 +53,9 @@
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn btn">Order Service</button>
+          <button type="button" class="hero-btn btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="features section">
@@ -383,28 +385,28 @@
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
-                <svg class="footer-soc-icons" width="24" heigth="24">
+                <svg class="footer-soc-icons">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
-                <svg class="footer-soc-icons" width="24" heigth="24">
+                <svg class="footer-soc-icons">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
-                <svg class="footer-soc-icons" width="24" heigth="24">
+                <svg class="footer-soc-icons">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
-                <svg class="footer-soc-icons" width="24" heigth="24">
+                <svg class="footer-soc-icons">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -413,5 +415,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg class="close-icons">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
